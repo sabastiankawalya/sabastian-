@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOFT IQ | Smart Tech Solutions</title>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --fade-speed: 1s;
+      --primary: #00c6ff;
+      --secondary: #0072ff;
+      --dark: #0f172a;
+      --light: #ffffff;
+      --gray: #94a3b8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      animation: fadeIn var(--fade-speed) ease-in;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      color: var(--light);
+      padding: 20px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      height: 85vh;
+      background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)),
+        url('https://images.unsplash.com/photo-1518770660439-4636190af475') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      max-width: 700px;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background: var(--secondary);
+    }
+
+    section {
+      padding: 80px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h3 {
+      font-size: 32px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .service-box h4 {
+      margin-bottom: 15px;
+      color: var(--secondary);
+    }
+
+    .why {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    .why p {
+      max-width: 800px;
+      margin: auto;
+      color: var(--gray);
+    }
+
+    footer {
+      background: #020617;
+      color: #cbd5f5;
+      text-align: center;
+      padding: 30px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .hero h2, .hero p, .btn {
+      animation: slideUp 1s ease forwards;
+    }
+
+    .service-box {
+      animation: slideUp 0.8s ease forwards;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      section {
+        padding: 50px 25px;
+      }
+
+      .hero h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <img src="SOFT.png" alt="SOFT IQ Logo" style="height:75px;">
+      <h1>SOFT IQ</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div>
+      <h2>Smart Tech Solutions for a Digital World</h2>
+      <p>
+        SOFT IQ delivers innovative software, web, and IT solutions that help
+        businesses grow, scale, and succeed in the modern digital economy.
+      </p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </div>
+  
+  <!-- About Us Section -->
+  <section id="about">
+    <div class="section-title">
+      <h3>About SOFT IQ</h3>
+    </div>
+    <p style="max-width:900px;margin:auto;text-align:center;">
+      SOFT IQ is a technology-driven company focused on delivering intelligent
+      software solutions, modern websites, mobile applications, and IT consulting
+      services. We help businesses leverage technology to work smarter and grow faster.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section>
+    <div class="section-title">
+      <h3>Our Services</h3>
+    </div>
+
+    <div class="services">
+      <div class="service-box">
+        <i class="fas fa-code" style="font-size:40px;color:var(--primary);margin-bottom:15px;"></i>
+        <h4>Software Development</h4>
+        <p>Custom software solutions tailored to your business needs.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-laptop-code" style="font-size:40px;color:var(--primary);margin-bottom:15px;"></i>
+        <h4>Website Design</h4>
+        <p>Modern, responsive, and user-friendly websites.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-mobile-screen" style="font-size:40px;color:var(--primary);margin-bottom:15px;"></i>
+        <h4>Mobile App Development</h4>
+        <p>Android and iOS applications built for performance.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-network-wired" style="font-size:40px;color:var(--primary);margin-bottom:15px;"></i>
+        <h4>IT Consulting</h4>
+        <p>Expert guidance to optimize your technology strategy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why">
+    <div class="section-title">
+      <h3>Why Choose SOFT IQ?</h3>
+    </div>
+    <p>
+      We combine creativity, technology, and intelligence to deliver reliable
+      solutions. Our team focuses on quality, innovation, and long-term client
+      success.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-title">
+      <h3>Contact Us</h3>
+    </div>
+    <form style="max-width:600px;margin:auto;display:grid;gap:15px;">
+      <input type="text" placeholder="Your Name" required style="padding:12px;">
+      <input type="email" placeholder="Your Email" required style="padding:12px;">
+      <textarea placeholder="Your Message" rows="5" style="padding:12px;"></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SOFT IQ. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
